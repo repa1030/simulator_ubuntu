@@ -1,0 +1,13 @@
+<launch>
+
+    <arg name="gui" default="true" />
+
+    <node name="pure_pursuit" pkg="pure_pursuit" type="pure_pursuit" output="screen" />
+
+    <!-- Visualization -->
+    <group if="$(eval arg('gui'))">
+         <node name="pure_pursuit_visualizer" pkg="pure_pursuit" type="pure_pursuit_visualizer" output="screen" />
+    </group>
+
+</launch>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+
+    <name>hska_adas</name>
+    <version>1.0.0</version>
+    <description>HSKA ADAS Launch Files and RVIZ Configurations</description>
+    <maintainer email="repa1030@hs-karlsruhe.de">Patrick Rebling</maintainer>
+    <license>MIT</license>
+
+    <author>Anna-Lena Marmein</author>
+    <author>Magdalena Kugler</author>
+    <author>Yannick Rauch</author>
+    <author>Markus Zimmermann</author>
+    <author>Patrick Rebling</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+</package>

@@ -1,0 +1,3 @@
+[submodule "external/rosbridge_suite"]
+	path = external/rosbridge_suite
+	url = https://github.com/RobotWebTools/rosbridge_suite.git

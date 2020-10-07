@@ -1,0 +1,24 @@
+image: docker:git
+
+pipelines:
+  custom:
+    melodic:
+       - step:
+           services:
+             - docker
+           script:
+             - apk add --update bash coreutils tar
+             - git clone --quiet --depth 1 https://github.com/ros-industrial/industrial_ci .industrial_ci -b master
+             - .industrial_ci/bitbucket.sh ROS_DISTRO=melodic
+    noetic:
+       - step:
+           services:
+             - docker
+           script:
+             - apk add --update bash coreutils tar
+             - git clone --quiet --depth 1 https://github.com/ros-industrial/industrial_ci .industrial_ci -b master
+             - .industrial_ci/bitbucket.sh ROS_DISTRO=noetic
+definitions:
+  services:
+    docker:
+      memory: 3072

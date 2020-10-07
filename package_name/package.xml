@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+
+    <name>package_name</name>
+    <version>1.0.0</version>
+    <!-- Adding description of package content -->
+    <description>Please insert the description of these package content</description>
+    <!-- Adding name of the person that is maintaining the package -->   
+    <maintainer email="max.mustermann@hs-karlsruhe.de">Max Mustermann</maintainer>
+    <!-- Adding used software licenses e.g. GPL, BSD, ASL, MIT -->
+    <license>MIT</license>
+    <!-- Adding authors of the package -->
+    <author>Max Mustermann</author>
+    <author>Second Author</author>
+    <author>Third Author</author>
+    <author>...</author>
+    <!-- Adding used dependencies: -->
+    <!-- <buildtool_depend> specifies build system tools which this package needs to build itself -->
+    <buildtool_depend>catkin</buildtool_depend>
+    <!-- <depend> specifies that a dependency is a build, export, and execution dependency -->
+    <depend>geometry_msgs</depend>
+    <depend>std_msgs</depend>
+    <depend>roscpp</depend>
+    <depend>dynamic_reconfigure</depend>
+    <depend>hska_msgs</depend>
+
+</package>
+
+<!-- For help and more dependencies types: http://wiki.ros.org/catkin/package.xml -->

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+
+    <name>localization</name>
+    <version>1.0.0</version>
+    <description>Nodes for Different Types of Localization of the Ego Vehicle</description>
+    <maintainer email="repa1030@hs-karlsruhe.de">Patrick Rebling</maintainer>
+    <license>MIT</license>
+
+    <author>Anna-Lena Marmein</author>
+    <author>Magdalena Kugler</author>
+    <author>Yannick Rauch</author>
+    <author>Markus Zimmermann</author>
+    <author>Patrick Rebling</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>geometry_msgs</depend>
+    <depend>tf</depend>
+    <depend>std_msgs</depend>
+    <depend>roscpp</depend>
+    <depend>dynamic_reconfigure</depend>
+
+</package>

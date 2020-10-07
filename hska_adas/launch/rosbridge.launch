@@ -1,0 +1,13 @@
+<launch>
+
+    <!-- ROSBRIDGE Options -->
+    <arg name="bson_only" default="true" />
+    <arg name="encoder" default="default" />
+
+    <!-- ROSBRIDGE -->
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+        <arg name="bson_only_mode" value="$(arg bson_only)" />
+        <arg unless="$(arg bson_only)" name="binary_encoder" value="$(arg encoder)" />
+    </include>
+
+</launch>

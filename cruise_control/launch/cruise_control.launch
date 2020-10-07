@@ -1,0 +1,4 @@
+<launch>
+    <node name="cruise_controller" pkg="cruise_control" type="cruise_controller" output="screen" />
+</launch>
+

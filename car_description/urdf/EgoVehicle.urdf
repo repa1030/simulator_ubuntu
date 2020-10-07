@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="EgoVehicle">
+  <material name="Body">
+    <color rgba="1 1 1 1" />
+  </material>
+  <material name="Wheels">
+    <color rgba="0.2 0.2 0.2 1" />
+  </material>
+  <link name="base_link">
+    <visual name="Body">
+      <geometry>
+        <mesh filename="package://car_description/meshes/Body_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="LightsFrame">
+      <geometry>
+        <mesh filename="package://car_description/meshes/Light_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="BrakeLights">
+      <geometry>
+        <mesh filename="package://car_description/meshes/BrakeLights_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="DayTimeLights">
+      <geometry>
+        <mesh filename="package://car_description/meshes/DayTimeLight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="FogLights">
+      <geometry>
+        <mesh filename="package://car_description/meshes/FogLight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="MainLights">
+      <geometry>
+        <mesh filename="package://car_description/meshes/MainLight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="RearReflectors">
+      <geometry>
+        <mesh filename="package://car_description/meshes/RearReflectors_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="RearLights">
+      <geometry>
+        <mesh filename="package://car_description/meshes/RearLights_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="ReflectorsLeft">
+      <geometry>
+        <mesh filename="package://car_description/meshes/ReflectorsLeft_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="ReflectorsRight">
+      <geometry>
+        <mesh filename="package://car_description/meshes/ReflectorsRight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="Paint">
+      <geometry>
+        <mesh filename="package://car_description/meshes/Paint_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="PlateRear">
+      <geometry>
+        <mesh filename="package://car_description/meshes/PlateBackTypeEU_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="PlateFront">
+      <geometry>
+        <mesh filename="package://car_description/meshes/PlateFrontTypeEU_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="SteeringWheel">
+      <origin rpy="0 0.261799 0" xyz="0.533454 0.339532 0.905986" />
+      <geometry>
+        <mesh filename="package://car_description/meshes/SteeringWheel_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="Windows">
+      <geometry>
+        <mesh filename="package://car_description/meshes/Windows_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="Interior">
+      <geometry>
+        <mesh filename="package://car_description/meshes/Interior_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="WipersLeft">
+      <origin rpy="-0.098873 0.552955 -6.276256" xyz="1.010642 0.537931 0.983133" />
+      <geometry>
+        <mesh filename="package://car_description/meshes/WipersLeft_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="WipersRight">
+      <origin rpy="0 0.597461 0" xyz="1.08891 -0.013765 0.974828" />
+      <geometry>
+        <mesh filename="package://car_description/meshes/WipersRight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="TurnLightRearLeft">
+      <geometry>
+        <mesh filename="package://car_description/meshes/TurnLightRearLeft_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="TurnLightRearRight">
+      <geometry>
+        <mesh filename="package://car_description/meshes/TurnLightRearRight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="FrontLightLeft">
+      <geometry>
+        <mesh filename="package://car_description/meshes/FrontLightLeft_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <visual name="FrontLightRight">
+      <geometry>
+        <mesh filename="package://car_description/meshes/FrontLightRight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Body" />
+    </visual>
+    <collision name="Vehicle">
+      <geometry>
+        <mesh filename="package://car_description/meshes/Mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="fl_wheel_link">
+    <visual name="WheelFrontLeft">
+      <geometry>
+        <mesh filename="package://car_description/meshes/WheelFrontLeft_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Wheels" />
+    </visual>
+    <visual name="BrakeFrontLeft">
+      <geometry>
+        <mesh filename="package://car_description/meshes/BrakeFrontLeft_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Wheels" />
+    </visual>
+  </link>
+  <link name="fr_wheel_link">
+    <visual name="WheelFrontRight">
+      <geometry>
+        <mesh filename="package://car_description/meshes/WheelFrontRight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Wheels" />
+    </visual>
+    <visual name="BrakeFrontRight">
+      <geometry>
+        <mesh filename="package://car_description/meshes/BrakeFrontRight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Wheels" />
+    </visual>
+  </link>
+  <link name="rl_wheel_link">
+    <visual name="WheelRearLeft">
+      <geometry>
+        <mesh filename="package://car_description/meshes/WheelRearLeft_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Wheels" />
+    </visual>
+    <visual name="BrakeRearLeft">
+      <geometry>
+        <mesh filename="package://car_description/meshes/BrakeRearLeft_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Wheels" />
+    </visual>
+  </link>
+  <link name="rr_wheel_link">
+    <visual name="WheelRearRight">
+      <geometry>
+        <mesh filename="package://car_description/meshes/WheelRearRight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Wheels" />
+    </visual>
+    <visual name="BrakeRearRight">
+      <geometry>
+        <mesh filename="package://car_description/meshes/BrakeRearRight_LOD0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Wheels" />
+    </visual>
+  </link>
+  <link name="front_center_camera_link" />
+  <link name="gps_unit_link" />
+  <link name="imu_link" />
+  <link name="wheel_speed_sensor_link" />
+  <joint name="base_link_fl_wheel_link_joint" type="fixed">
+    <origin xyz="1.389739 0.743279 0.327904" />
+    <parent link="base_link" />
+    <child link="fl_wheel_link" />
+  </joint>
+  <joint name="base_link_fr_wheel_link_joint" type="fixed">
+    <origin xyz="1.389739 -0.743279 0.327904" />
+    <parent link="base_link" />
+    <child link="fr_wheel_link" />
+  </joint>
+  <joint name="base_link_rl_wheel_link_joint" type="fixed">
+    <origin xyz="-1.296753 0.743279 0.327904" />
+    <parent link="base_link" />
+    <child link="rl_wheel_link" />
+  </joint>
+  <joint name="base_link_rr_wheel_link_joint" type="fixed">
+    <origin xyz="-1.296753 -0.743279 0.327904" />
+    <parent link="base_link" />
+    <child link="rr_wheel_link" />
+  </joint>
+  <joint name="base_link_front_center_camera_link_joint" type="fixed">
+    <origin rpy="0 6.230825 0" xyz="0.42 0 1.33" />
+    <parent link="base_link" />
+    <child link="front_center_camera_link" />
+  </joint>
+  <joint name="base_link_gps_unit_link_joint" type="fixed">
+    <origin xyz="0.9 0 0.652" />
+    <parent link="base_link" />
+    <child link="gps_unit_link" />
+  </joint>
+  <joint name="base_link_imu_link_joint" type="fixed">
+    <origin xyz="0.95 0 0.8" />
+    <parent link="base_link" />
+    <child link="imu_link" />
+  </joint>
+  <joint name="base_link_wheel_speed_sensor_link_joint" type="fixed">
+    <origin xyz="0 0 0.2" />
+    <parent link="base_link" />
+    <child link="wheel_speed_sensor_link" />
+  </joint>
+</robot>

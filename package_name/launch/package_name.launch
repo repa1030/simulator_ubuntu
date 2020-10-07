@@ -1,0 +1,7 @@
+<launch>
+
+    <node name="node1_name" pkg="package_name" type="node1_name" output="screen" />
+    <node name="node2_name" pkg="package_name" type="node2_name" output="screen" />
+
+</launch>
+

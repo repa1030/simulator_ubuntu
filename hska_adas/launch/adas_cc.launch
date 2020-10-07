@@ -1,0 +1,25 @@
+<launch>
+
+    <!-- ROSBRIDGE Options -->
+    <arg name="bson_only" default="true" />
+    <arg name="encoder" default="default" />
+
+    <!-- GUI Availability -->
+    <arg name="gui" default="true" />
+
+    <!-- ROSBRIDGE -->
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+        <arg name="bson_only_mode" value="$(arg bson_only)" />
+        <arg unless="$(arg bson_only)" name="binary_encoder" value="$(arg encoder)" />
+    </include>
+
+    <!-- ADAS Systems -->
+    <node name="cruise_controller" pkg="cruise_control" type="cruise_controller" output="screen" />
+
+    <!-- Graphical User Interface -->
+    <group if="$(eval arg('gui'))">
+        <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" />
+    </group>
+
+</launch>
+    

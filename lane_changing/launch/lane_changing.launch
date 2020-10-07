@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="lane_changer" pkg="lane_changing" type="lane_changer" output="screen" />
+
+</launch>
+

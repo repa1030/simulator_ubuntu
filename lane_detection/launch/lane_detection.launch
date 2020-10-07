@@ -1,0 +1,12 @@
+<launch>
+
+    <arg name="gui" default="true" />
+
+    <node name="lane_detector" pkg="lane_detection" type="lane_detector" output="screen" />
+
+    <!-- Visualization -->
+    <group if="$(eval arg('gui'))">
+        <node name="lane_visualizer" pkg="lane_detection" type="lane_visualizer" output="screen" />
+    </group>
+
+</launch>

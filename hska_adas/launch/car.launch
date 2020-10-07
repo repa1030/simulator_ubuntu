@@ -1,0 +1,15 @@
+<launch>
+
+    <!-- GUI Availability -->
+    <arg name="gui" default="true" />
+
+    <!-- RVIZ Configuration -->
+    <arg name="rviz_config" default="$(find hska_adas)/configs/car_visualization.rviz" />
+
+    <!-- Graphical User Interface -->
+    <group if="$(eval arg('gui'))">
+        <include file="$(find car_description)/launch/robot_state_publisher.launch" />
+        <node name="rviz" pkg="rviz" type="rviz" args="-d$(arg rviz_config)" />
+    </group>
+
+</launch>

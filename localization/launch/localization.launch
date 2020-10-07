@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="fake_localizer" pkg="localization" type="fake_localizer" output="screen" />
+
+</launch>
+

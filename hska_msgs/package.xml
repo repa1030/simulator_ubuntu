@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+
+    <name>hska_msgs</name>
+    <version>1.0.0</version>
+    <description>Custom Messages of the HSKA HAD Simulator</description>
+    <maintainer email="maan1044@hs-karlsruhe.de">Anna-Lena Marmein</maintainer>
+    <license>MIT</license>
+
+    <author>Anna-Lena Marmein</author>
+    <author>Magdalena Kugler</author>
+    <author>Yannick Rauch</author>
+    <author>Markus Zimmermann</author>
+    <author>Patrick Rebling</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <build_depend>message_generation</build_depend>
+    <exec_depend>message_runtime</exec_depend>
+
+</package>
