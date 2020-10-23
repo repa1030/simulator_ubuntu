@@ -60,6 +60,7 @@ void PurePursuit::run() {
         ros::spinOnce();
       	if(m_next_wp_set && m_adas_cmd.lkas) {
             calcSteeringAngle();
+            m_steer.header.stamp = m_next_wp.header.stamp;
             m_steer_pub.publish(m_steer);
             m_next_wp_set = false;
             if(m_display_information) {

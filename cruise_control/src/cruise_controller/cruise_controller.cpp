@@ -99,6 +99,7 @@ void CruiseController::run() {
             // Calc pedal pos
             calcPedalPosition();
             // Publishing of m_pedal
+            m_pedal.header.stamp = ros::Time::now();
             m_pedal_pub.publish(m_pedal);
             m_current_velocity_set = false;
         }
