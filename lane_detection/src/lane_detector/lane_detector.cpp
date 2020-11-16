@@ -519,9 +519,15 @@ void LaneDetector::calculateWaypoint() {
     wp_img.push_back(cv::Point(wp_tmp.x, wp_tmp.y));
     // Draw waypoint if desired
     if(m_draw_waypoint) {
+        #if CV_MAJOR_VERSION == 3
         cv::circle(m_img_warped, wp_img[0], m_waypoint_radius, m_color_waypoint, CV_FILLED);
         cv::perspectiveTransform(wp_img, wp_img, m_warp_mat_inv);
         cv::circle(m_img_input, wp_img[0], m_waypoint_radius, m_color_waypoint, CV_FILLED);
+        #else
+        cv::circle(m_img_warped, wp_img[0], m_waypoint_radius, m_color_waypoint, cv::FILLED);
+        cv::perspectiveTransform(wp_img, wp_img, m_warp_mat_inv);
+        cv::circle(m_img_input, wp_img[0], m_waypoint_radius, m_color_waypoint, cv::FILLED);
+        #endif
     }
     // Convert to m and to base_link frame
     m_next_waypoint.header.stamp = m_img_input_time;

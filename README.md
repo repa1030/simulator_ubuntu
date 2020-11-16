@@ -1,8 +1,8 @@
 # ROS Environment
 
 The computing part the simulator is placed in the ubuntu environment. It is possible to execute this in a virtual machine or on a native ubuntu PC.  
-**1. Ubuntu Version: 18.04 with ROS Melodic (Branch main)**  
-**2. Ubuntu Version: 20.04 with ROS Noetic (Branch ros_noetic)**  
+**1. Ubuntu Version: 18.04 with ROS Melodic**  
+**2. Ubuntu Version: 20.04 with ROS Noetic**  
 _Please follow the corresponding instructions to build and run the repository correctly._
 
 -----------------------
@@ -21,7 +21,7 @@ and replace the distribution with "melodic". If you can't see the file ".bashrc"
 
 There are some requirements that are maybe not automatically installed with ROS.
 
-1. For the usage of git:  
+1. For the usage of git:   
 `sudo apt-get install git`
 2. For the compressed image transport:  
 `sudo apt-get install ros-melodic-compressed-image-transport`
@@ -33,7 +33,7 @@ There are some requirements that are maybe not automatically installed with ROS.
 2. Go to the source folder of your workspace  
 `cd ~/catkin_ws/src`
 3. Clone the repository from bitbucket  
-`git clone https://github.com/repa1030/simulator_ubuntu.git`
+`git clone https://your_username@bitbucket.org/repa1030/simulator_ubuntu.git`
 4. Go to the simulator_ubuntu folder  
 `cd simulator_ubuntu`
 5. Initialize the git submodules  
@@ -113,11 +113,9 @@ There are some requirements that are not automatically installed with ROS.
 `git clone https://your_username@bitbucket.org/repa1030/simulator_ubuntu.git`
 4. Go to the simulator_ubuntu folder  
 `cd simulator_ubuntu`
-5. Switch to Branch ros_noetic  
-`git checkout ros_noetic`
-6. Initialize the git submodules  
+5. Initialize the git submodules  
 `git submodule init`
-7. Update the git submodules  
+6. Update the git submodules  
 `git submodule update`
 
 ### 2.3. Build the catkin workspace (only when source code changed)
@@ -141,7 +139,7 @@ There are some requirements that are not automatically installed with ROS.
     2. Ego Vehicle Visualization  
     `roslaunch hska_adas car.launch`
     3. Cruise Controller  
-    `roslaunch hska_adas adas_cc.launch`
+    `roslaunch hska_adas adas_cc.launch bson_only:=false`
     4. Lane Keeping Assist System  
     `roslaunch hska_adas adas_lkas.launch bson_only:=false`
     5. Full ADAS Functionality  
@@ -151,7 +149,7 @@ There are some requirements that are not automatically installed with ROS.
 
 * Probably the visualization of the images from unity is not working due to errors in rqt_image_view.  
 If this happens make sure the compressed_image_transport package is installed.  
-`sudo apt-get install ros-melodic-compressed-image-transport`
+`sudo apt-get install ros-noetic-compressed-image-transport`
 * If there are some errors facing the messages and message types (e.g. twist stamped, ...) just restart the launch file.
 * If the simulator in Windows was stopped there might be some warning messages in the console.  
 Best practice is to restart the launch file if this happens otherwise there might be some complications  
