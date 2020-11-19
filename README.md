@@ -1,6 +1,6 @@
 # ROS Environment
 
-**Go [here](https://github.com/repa1030/simulator_windows) for the windwos environment of the simulator.**  
+**Go [here](https://github.com/repa1030/simulator_windows) for the windows environment of the simulator.**  
 The computing part is placed in the ubuntu environment. It is possible to execute this in a virtual machine or on a native ubuntu PC.  
 **1. Ubuntu Version: 18.04 with ROS Melodic**  
 **2. Ubuntu Version: 20.04 with ROS Noetic**  
