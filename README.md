@@ -6,8 +6,6 @@ The computing part is placed in the ubuntu environment. It is possible to execut
 **2. Ubuntu Version: 20.04 with ROS Noetic**  
 _Please follow the corresponding instructions to build and run the repository correctly._
 
------------------------
-
 ## 1. Ubuntu 18.04 and ROS Melodic (recommend)
 
 Go [here](http://wiki.ros.org/melodic/Installation/Ubuntu) for installation of ROS Melodic and install ros-melodic-desktop.
@@ -77,8 +75,6 @@ If this happens make sure the compressed_image_transport package is installed.
 * If there are some errors facing the messages and message types (e.g. twist stamped, ...) just restart the launch file.
 * If the simulator in Windows was stopped there might be some warning messages in the console.  
 Best practice is to restart the launch file if this happens otherwise there might be some complications  
-
------------------------
 
 ## 2. Ubuntu 20.04 and ROS Noetic (experimental)
 
