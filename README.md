@@ -1,10 +1,11 @@
 # ROS Environment
 
-**Go [here](https://github.com/repa1030/simulator_windows) for the windows environment of the simulator.**  
-The computing part is placed in the ubuntu environment. It is possible to execute this in a virtual machine or on a native ubuntu PC.  
+The computing part the simulator is placed in the ubuntu environment. It is possible to execute this in a virtual machine or on a native ubuntu PC.  
 **1. Ubuntu Version: 18.04 with ROS Melodic**  
 **2. Ubuntu Version: 20.04 with ROS Noetic**  
 _Please follow the corresponding instructions to build and run the repository correctly._
+
+-----------------------
 
 ## 1. Ubuntu 18.04 and ROS Melodic (recommend)
 
@@ -32,7 +33,7 @@ There are some requirements that are maybe not automatically installed with ROS.
 2. Go to the source folder of your workspace  
 `cd ~/catkin_ws/src`
 3. Clone the repository from bitbucket  
-`git clone https://github.com/repa1030/simulator_ubuntu.git`
+`git clone https://your_username@bitbucket.org/repa1030/simulator_ubuntu.git`
 4. Go to the simulator_ubuntu folder  
 `cd simulator_ubuntu`
 5. Initialize the git submodules  
@@ -75,6 +76,8 @@ If this happens make sure the compressed_image_transport package is installed.
 * If there are some errors facing the messages and message types (e.g. twist stamped, ...) just restart the launch file.
 * If the simulator in Windows was stopped there might be some warning messages in the console.  
 Best practice is to restart the launch file if this happens otherwise there might be some complications  
+
+-----------------------
 
 ## 2. Ubuntu 20.04 and ROS Noetic (experimental)
 
