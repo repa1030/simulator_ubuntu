@@ -82,7 +82,7 @@ Best practice is to restart the launch file if this happens otherwise there migh
 ## 2. Ubuntu 20.04 and ROS Noetic (experimental)
 
 If you are using Ubuntu 20.04 and ROS Noetic, make sure to switch the serializer to Newtonsoft JSON  
-in the Unity Project in RosConnector due to complications in deserialization of BSON in the current version of the ROSBRIDGE.
+in the Main Menu of the Unity Project due to complications in deserialization of BSON in the current version of the ROSBRIDGE.
 
 Go [here](http://wiki.ros.org/noetic/Installation/Ubuntu) for installation of ROS Noetic and install ros-noetic-desktop.
 
