@@ -33,7 +33,7 @@ There are some requirements that are maybe not automatically installed with ROS.
 2. Go to the source folder of your workspace  
 `cd ~/catkin_ws/src`
 3. Clone the repository from bitbucket  
-`git clone https://your_username@bitbucket.org/repa1030/simulator_ubuntu.git`
+`git clone https://github.com/repa1030/simulator_ubuntu.git`
 4. Go to the simulator_ubuntu folder  
 `cd simulator_ubuntu`
 5. Initialize the git submodules  
@@ -110,7 +110,7 @@ There are some requirements that are not automatically installed with ROS.
 2. Go to the source folder of your workspace  
 `cd ~/catkin_ws/src`
 3. Clone the repository from bitbucket  
-`git clone https://your_username@bitbucket.org/repa1030/simulator_ubuntu.git`
+`git clone https://github.com/repa1030/simulator_ubuntu.git`
 4. Go to the simulator_ubuntu folder  
 `cd simulator_ubuntu`
 5. Initialize the git submodules  
