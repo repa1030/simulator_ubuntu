@@ -9,7 +9,7 @@ _Please follow the corresponding instructions to build and run the repository co
 
 -----------------------
 
-## 1. Ubuntu 18.04 and ROS Melodic (recommend)
+## 1. Ubuntu 18.04 and ROS Melodic (recommended)
 
 Go [here](http://wiki.ros.org/melodic/Installation/Ubuntu) for installation of ROS Melodic and install ros-melodic-desktop.
 
