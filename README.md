@@ -1,13 +1,15 @@
 # ROS Environment
 
-The computing part the simulator is placed in the ubuntu environment. It is possible to execute this in a virtual machine or on a native ubuntu PC.  
+**Go [here](https://github.com/repa1030/simulator_windows) for the Unity project of the simulator.**  
+The computing part the simulator is placed in the ubuntu environment.  
+It is possible to execute this in a virtual machine or on a native ubuntu PC.  
 **1. Ubuntu Version: 18.04 with ROS Melodic**  
 **2. Ubuntu Version: 20.04 with ROS Noetic**  
 _Please follow the corresponding instructions to build and run the repository correctly._
 
 -----------------------
 
-## 1. Ubuntu 18.04 and ROS Melodic (recommend)
+## 1. Ubuntu 18.04 and ROS Melodic (recommended)
 
 Go [here](http://wiki.ros.org/melodic/Installation/Ubuntu) for installation of ROS Melodic and install ros-melodic-desktop.
 
@@ -33,7 +35,7 @@ There are some requirements that are maybe not automatically installed with ROS.
 2. Go to the source folder of your workspace  
 `cd ~/catkin_ws/src`
 3. Clone the repository from bitbucket  
-`git clone https://your_username@bitbucket.org/repa1030/simulator_ubuntu.git`
+`git clone https://github.com/repa1030/simulator_ubuntu.git`
 4. Go to the simulator_ubuntu folder  
 `cd simulator_ubuntu`
 5. Initialize the git submodules  
@@ -82,7 +84,7 @@ Best practice is to restart the launch file if this happens otherwise there migh
 ## 2. Ubuntu 20.04 and ROS Noetic (experimental)
 
 If you are using Ubuntu 20.04 and ROS Noetic, make sure to switch the serializer to Newtonsoft JSON  
-in the Unity Project in RosConnector due to complications in deserialization of BSON in the current version of the ROSBRIDGE.
+in the Main Menu of the Unity Project due to complications in deserialization of BSON in the current version of the ROSBRIDGE.
 
 Go [here](http://wiki.ros.org/noetic/Installation/Ubuntu) for installation of ROS Noetic and install ros-noetic-desktop.
 
@@ -110,7 +112,7 @@ There are some requirements that are not automatically installed with ROS.
 2. Go to the source folder of your workspace  
 `cd ~/catkin_ws/src`
 3. Clone the repository from bitbucket  
-`git clone https://your_username@bitbucket.org/repa1030/simulator_ubuntu.git`
+`git clone https://github.com/repa1030/simulator_ubuntu.git`
 4. Go to the simulator_ubuntu folder  
 `cd simulator_ubuntu`
 5. Initialize the git submodules  
